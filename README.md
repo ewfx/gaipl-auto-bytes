@@ -18,10 +18,11 @@ This project is an AI-powered IT Support Chatbot designed to provide expert tech
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
-📹 [artifacts\demo\DB_persona.mp4](#) (if applicable)  
+📹 [artifacts/demo/DB_persona.mp4](#) (if applicable)  
+📹 [artifacts/demo/Network_persona.mp4](#) (if applicable)  
 🖼️ Screenshots:
-![Screenshot 1](artifacts\demo\DB_support.png)
-![Screenshot 2](artifacts\demo\OS_support.png)
+![Screenshot 1](artifacts/demo/DB_support.png)
+![Screenshot 2](artifacts/demo/OS_support.png)
 
 ## 💡 Inspiration
 The project was inspired by the challenges IT support teams face in handling frequent and recurring incidents. Automating responses and leveraging historical data can significantly reduce resolution times, improve accuracy, and optimize IT operations.
