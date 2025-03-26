@@ -1,4 +1,4 @@
-# 🚀 Project Name
+# 🚀 Persona IT Support
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
@@ -14,47 +14,80 @@
 ---
 
 ## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+This project is an AI-powered IT Support Chatbot designed to provide expert technical assistance across multiple domains, including OS support, database management, networking, hardware troubleshooting, and storage management. The chatbot utilizes Ollama for natural language processing, FAISS for efficient retrieval of past incidents, and Gradio for an interactive web-based UI.
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
+📹 [artifacts/demo/DB_persona.mp4](#) (if applicable)  
+📹 [artifacts/demo/Network_persona.mp4](#) (if applicable)  
 🖼️ Screenshots:
-
-![Screenshot 1](link-to-image)
+![Screenshot 1](artifacts/demo/DB_support.png)
+![Screenshot 2](artifacts/demo/OS_support.png)
 
 ## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+The project was inspired by the challenges IT support teams face in handling frequent and recurring incidents. Automating responses and leveraging historical data can significantly reduce resolution times, improve accuracy, and optimize IT operations.
 
 ## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+Provides expert assistance across multiple IT domains.
+
+Uses Ollama for intelligent query processing.
+
+Retrieves relevant past incidents using FAISS for enhanced accuracy.
+
+Displays responses interactively via a Gradio web UI.
+
+Supports multiple personas for domain-specific assistance.
 
 ## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
+Data Preparation: Compiled past incident reports in JSONL format.
+
+Vector Storage: Indexed incident data using FAISS and Sentence Transformers.
+
+Backend Development:
+
+Created a FastAPI server.
+
+Integrated Ollama for AI-based responses.
+
+Implemented retrieval-augmented generation (RAG) using FAISS.
+
+Frontend Development:
+
+Built an interactive Gradio UI with persona-based tabs.
+
+Integrated the FastAPI backend for real-time responses.
 
 ## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+Ensuring accurate responses: Fine-tuning persona-based queries for better contextual understanding.
+
+Efficient retrieval: Implementing FAISS indexing for quick and relevant information retrieval.
+
+User experience: Designing an intuitive and responsive UI with multiple personas.
+
+Performance tuning: Optimizing API calls and embedding models for faster response times.
 
 ## 🏃 How to Run
-1. Clone the repository  
-   ```sh
-   git clone https://github.com/your-repo.git
-   ```
-2. Install dependencies  
-   ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
-   ```
-3. Run the project  
-   ```sh
-   npm start  # or python app.py
-   ```
+
+1. Install Dependencies
+pip install fastapi uvicorn ollama gradio faiss-cpu sentence-transformers requests
+2. Set Up the FAISS Database
+python vector_store.py
+3. Start the Backend
+uvicorn backend:app --reload
+4. Start the Gradio Frontend
+python frontend.py
+5. Access the UI
+Open http://localhost:7860 in a web browser and start using the chatbot.
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+- 🔹 Frontend: Gradio
+- 🔹 Backend: FastAPI, Ollama
+- 🔹 Database: FAISS, Sentence Transformers
+- 🔹 Other: JSONL for past incidents
 
-## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+## 👥 Team AutoBytes
+- **Vishnu Theertha** - [https://github.com/vishnu0389](#)
+- **Joydeep Ghosh** - 
+- **Satyaki Chatterjee** - 
+- **Venkatesh Girjali** - 
+- **Sonal Chouhan** - 
