@@ -1,4 +1,4 @@
-# 🚀 Project Name
+# 🚀 Persona IT Support
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
